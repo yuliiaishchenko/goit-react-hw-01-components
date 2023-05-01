@@ -13,30 +13,39 @@ export const TransactionHistory = ({ items }) => {
   </thead>
 
   <tbody>
-    {items.map(({ item, idx }) => {
-        return (   <TableRow 
-            key={item.id} 
-            id={item.id}
-            type={item.type}
-            amount={item.amount}
-            currency={item.currency}
-            index={idx}
-          />);
-    })}
+    {items.map(({ id, type, amount, currency }) => (
+      <Transaction
+            key={id} 
+            type={type}
+            amount={amount}
+            currency={currency}
+           
+          />)
+    )}
   </tbody>
 </table>
     );
 };
- 
-const TableRow = ({ type, amount, currency, index })=>{
-    return(
-        <tr idx={index}>
-        <td>{type}</td>
-        <td>{amount}</td>
-        <td>{currency}</td>
-      </tr>
+
+const Transaction = ({ type, amount, currency }) => {
+    return (
+        <tr>
+      <td>{type}</td>
+      <td>{amount}</td>
+      <td>{currency}</td>
+    </tr>
     )
 }
+ 
+// const TableRow = ({ type, amount, currency, index })=>{
+//     return(
+//         <tr idx={index}>
+//         <td>{type}</td>
+//         <td>{amount}</td>
+//         <td>{currency}</td>
+//       </tr>
+//     )
+// }
 
 TransactionHistory.propTypes = {
     items: PropTypes.arrayOf(PropTypes.shape({
@@ -47,9 +56,9 @@ TransactionHistory.propTypes = {
     }).isRequired).isRequired
 }
 
-TableRow.propTypes = {
- index: PropTypes.number.isRequired,
- type: PropTypes.string.isRequired,
- amount: PropTypes.string.isRequired,
- currency: PropTypes.string.isRequired,
-};
+// TableRow.propTypes = {
+//  index: PropTypes.number.isRequired,
+//  type: PropTypes.string.isRequired,
+//  amount: PropTypes.string.isRequired,
+//  currency: PropTypes.string.isRequired,
+// };
