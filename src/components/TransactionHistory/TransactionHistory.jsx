@@ -13,8 +13,9 @@ export const TransactionHistory = ({ items }) => {
   </thead>
 
   <tbody>
-    {items.map(({ item, idx }) =>{
-        return (   <TableRow key={item.id} 
+    {items.map(({ item, idx }) => {
+        return (   <TableRow 
+            key={item.id} 
             id={item.id}
             type={item.type}
             amount={item.amount}
@@ -25,7 +26,7 @@ export const TransactionHistory = ({ items }) => {
   </tbody>
 </table>
     );
-}
+};
  
 const TableRow = ({ type, amount, currency, index })=>{
     return(
