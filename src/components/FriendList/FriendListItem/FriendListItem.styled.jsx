@@ -27,9 +27,8 @@ export const Status = styled.span`
     width: 10px;
     display: block;
     border-radius: 50%;
-    background-color: ${({ isOnline }) => {
-    return isOnline ? '#45b24a' : '#ff4c55'}};
-    background-color: #000000;    
+    background-color: ${({ status, theme: { colors} }) => status ? colors.green : colors.red};
+    
 `
 
 export const Image = styled.img`

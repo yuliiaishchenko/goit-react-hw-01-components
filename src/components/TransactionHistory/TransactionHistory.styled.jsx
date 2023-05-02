@@ -21,7 +21,7 @@ export const TableHead = styled.thead`
 `
 
 export const TableTr = styled.tr`
-    :nth-child(2n){
+    :nth-of-type(2n){
         background-color: #98fb98;
     }
 `
