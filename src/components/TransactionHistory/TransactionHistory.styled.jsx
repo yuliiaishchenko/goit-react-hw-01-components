@@ -11,7 +11,7 @@ export const TableTh = styled.th`
     border: 1px solid black;
 `
 export const TableTd = styled.td`
-    width: 150px;
+    width: 130px;
     padding: 25px;
     border: 1px solid black;
 `
