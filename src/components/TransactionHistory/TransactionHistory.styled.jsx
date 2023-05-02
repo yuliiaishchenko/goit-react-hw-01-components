@@ -18,3 +18,9 @@ export const TableTd = styled.td`
 export const TableHead = styled.thead`
     background-color: gray;
 `
+
+export const TableTr = styled.tr`
+    :nth-child(2n){
+        background-color: #98fb98;
+    }
+`
