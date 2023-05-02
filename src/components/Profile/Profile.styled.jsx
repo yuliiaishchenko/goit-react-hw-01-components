@@ -57,7 +57,9 @@ li{
     display: grid;
     width: 80px;
     justify-content: center;
-    border-right: 1px solid green;
+    border: 2px solid azure;
+    padding: 5px;
+    margin-right: 10px;
 @media screen and (min-width:768px){
     width: 128px;
 }}
