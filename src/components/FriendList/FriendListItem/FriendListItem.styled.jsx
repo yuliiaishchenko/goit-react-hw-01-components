@@ -19,7 +19,7 @@ export const ItemsOfFriends = styled.li`
 export const Name = styled.p`
     font-weight: 700;
     font-size: 18px;
-    color: ${({ theme: { colors } }) => colors.black};
+    color: ${(colors) => colors.black};
 `
 
 export const Status = styled.span`
@@ -27,8 +27,9 @@ export const Status = styled.span`
     width: 10px;
     display: block;
     border-radius: 50%;
-    background-color: ${({ status, theme: {colors}})=> status ? colors.green : colors.red};
-    background-color: ${({ theme: { colors } }) => colors.black};    
+    background-color: ${props => {
+    return props.isOnline ? '#45b24a' : '#ff4c55'}};
+    background-color: ${( { colors } ) => colors.black};    
 `
 
 export const Image = styled.img`
