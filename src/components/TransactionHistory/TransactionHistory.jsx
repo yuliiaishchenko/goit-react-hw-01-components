@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Table, TableHead, TableTd, TableTh } from './TransactionHistory.styled';
+import { Table, TableHead, TableTd, TableTh, TableTr } from './TransactionHistory.styled';
 
 export const TransactionHistory = ({ items }) => {
     return (
@@ -30,11 +30,11 @@ export const TransactionHistory = ({ items }) => {
 
 const Transaction = ({ type, amount, currency,id }) => {
     return (
-        <tr key={id}>
+        <TableTr key={id}>
       <TableTd>{type}</TableTd>
       <TableTd>{amount}</TableTd>
       <TableTd>{currency}</TableTd>
-    </tr>
+    </TableTr>
     )
 }
  
