@@ -8,7 +8,7 @@ export const Section = styled.section`
     max-width: 100%;
     border-radius: 10px;
     width: 360px;
-
+    margin-top: 15px;
 `
 
 export const Title = styled.h2`

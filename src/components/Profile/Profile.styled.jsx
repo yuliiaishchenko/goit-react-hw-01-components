@@ -50,11 +50,14 @@ list-style: none;
 display: flex;
 padding: 10px;
 margin: 0;
+margin-top: 15px;
 li{
+    background-color: white;
+    border-radius: 10px;
     display: grid;
     width: 80px;
     justify-content: center;
-    :not(:last-child){border-right: 1px solid green}
+    border-right: 1px solid green;
 @media screen and (min-width:768px){
     width: 128px;
 }}
