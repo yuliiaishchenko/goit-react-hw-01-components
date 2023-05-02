@@ -6,7 +6,7 @@ export const Table = styled.table`
     margin: 50px auto 30px;
 `
 export const TableTh = styled.th`
-    width: 150px;
+    width: 130px;
     padding: 25px;
     border: 1px solid black;
 `
