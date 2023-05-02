@@ -1,34 +1,35 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { UserProfile, Description, Avatar, Name, Tag, Location, Stats, Label, Quantity } from './Profile.styled';
 
 export const Profile = ({username, tag, location, avatar, stats}) =>
-{return (<div class="profile">
-<div className="description">
-  <img
+{return (<UserProfile>
+<Description>
+  <Avatar
     src={avatar}
     alt="User avatar"
-    className="avatar"
+   
   />
-  <p className="name">{username}</p>
-  <p className="tag">@{tag}</p>
-  <p className="location">{location}</p>
-</div>
+  <Name>{username}</Name>
+  <Tag>@{tag}</Tag>
+  <Location>{location}</Location>
+</Description>
 
-<ul className="stats">
+<Stats>
   <li>
-    <span className="label">Followers</span>
-    <span className="quantity">{stats.followers}</span>
+    <Label>Followers</Label>
+    <Quantity>{stats.followers}</Quantity>
   </li>
   <li>
-    <span className="label">Views</span>
-    <span className="quantity">{stats.views}</span>
+    <Label>Views</Label>
+    <Quantity>{stats.views}</Quantity>
   </li>
   <li>
-    <span className="label">Likes</span>
-    <span className="quantity">{stats.likes}</span>
+    <Label>Likes</Label>
+    <Quantity>{stats.likes}</Quantity>
   </li>
-</ul>
-</div>);};
+</Stats>
+</UserProfile>);};
 
 Profile.propTypes = {
     username: PropTypes.string.isRequired,
