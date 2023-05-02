@@ -10,9 +10,9 @@ export const ItemsOfFriends = styled.li`
     width: 150px;
     padding: 10px;
     border-radius: 10px;
-    :hover {
-        box-shadow: ${({ theme: { colors }}) => colors.shadow};
-    }
+    /* :hover {
+        box-shadow: ${({theme: { colors }}) => colors.shadow};
+    } */
 
 `;
 
@@ -38,5 +38,5 @@ export const Image = styled.img`
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    
+
 `
