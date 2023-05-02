@@ -27,9 +27,9 @@ export const TransactionHistory = ({ items }) => {
     );
 };
 
-const Transaction = ({ type, amount, currency }) => {
+const Transaction = ({ type, amount, currency,id }) => {
     return (
-        <tr>
+        <tr key={id}>
       <td>{type}</td>
       <td>{amount}</td>
       <td>{currency}</td>
