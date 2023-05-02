@@ -6,12 +6,12 @@ export const ItemsOfFriends = styled.li`
     align-items: center;
     gap: 15px;
     cursor: pointer;
-    background-color: #fff;
+    background-color: ${({ theme: { colors } }) => colors.white};
     width: 150px;
     padding: 10px;
     border-radius: 10px;
     :hover {
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        box-shadow: ${({ theme: {colors} }) => colors.shadow};
     }
 
 `;
@@ -19,7 +19,7 @@ export const ItemsOfFriends = styled.li`
 export const Name = styled.p`
     font-weight: 700;
     font-size: 18px;
-    color: #000000;
+    color: ${({ theme: { colors } }) => colors.black};
 `
 
 export const Status = styled.span`
