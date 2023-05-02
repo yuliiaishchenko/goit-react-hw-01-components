@@ -11,7 +11,7 @@ import { FriendList } from './FriendList/FriendList/FriendList';
 import transactions from './TransactionHistory/transactions.json';
 import { TransactionHistory } from './TransactionHistory/TransactionHistory';
 
-import { Container, Wrapper } from './App.styled';
+import { Container } from './App.styled';
 
 
 
@@ -26,10 +26,8 @@ export const App = () => {
   stats={user.stats}
 />
 <Statistics title="Upload stats" stats={data} />
-<Wrapper>
 <FriendList friends={friends} />
 <TransactionHistory items={transactions} />
-</Wrapper>
     </Container>
   );
 };

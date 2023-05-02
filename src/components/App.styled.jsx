@@ -12,9 +12,3 @@ export const Container = styled.div`
 //         fontSize: 40,
 //         color: '#010101'
 
-export const Wrapper = styled.div`
-    @media screen and (min-width: 425px) {
-        display: flex;
-        justify-content: space-between;
-    }
-`
