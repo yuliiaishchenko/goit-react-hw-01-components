@@ -40,15 +40,19 @@ export const StatListItem = styled.li`
     width: 100%;
     height: 100%;
     border-radius: 0,5rem;
+    background-color: gray;
+    border-radius: 10px;
+    padding: 5px;
+    border: 2px solid azure;
 `
 
 export const Label = styled.span`
-    color: #f0bad2;
+   color: azure;
     font-size: 0.8rem;
 `
 
 export const Percentage = styled.span`
     font-size: 1.2rem;
-    color: #f0bad2;
+    color: aquamarine;
 `
 
